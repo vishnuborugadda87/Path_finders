@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATH FINDER</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #321414;
+            background-image: url('IMG_5784.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 80px; /* Increased font size */
+            margin-top: 40px;
+            color: #fff;
+            position: relative;
+            letter-spacing: 5px; /* Added letter spacing */
+        }
+
+        h1::before {
+            content: "   PATH FINDER";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #FFD700, transparent);
+            background-size: 200% 100%;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 2s linear infinite;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #FFD700; /* Gold text color */
+        }
+
+        p {
+            font-size: 20px; /* Increased font size */
+            margin: 20px; /* Added margin for better spacing */
+        }
+
+        #button-container {
+            margin-top: auto; /* Align to the bottom */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* Align at the bottom */
+        }
+
+        .button {
+            background-color: #FFD3E7; /* Pale baby pink */
+            color: #321414; /* Dark chocolate brown text */
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #FFA6C1; /* Shaded baby pink on hover */
+            transform: scale(1.1); /* Slightly larger on hover */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Soft glow effect on hover */
+        }
+
+        #login-button {
+            background-color: #FFD3E7; /* Pale baby pink */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        #login-button:hover {
+            background-color: #FFA6C1; /* Shaded baby pink on hover */
+            transform: scale(1.1); /* Slightly larger on hover */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Soft glow effect on hover */
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <table>
+        <tr>
+        <td colspan="2"><h1 style="text-align: center;">&nbsp;</h1></td>
+        </tr>
+        <tr>
+    <td><h2>Information about me:</h2></td>
+    <td><p style="text-align:center;">We intend to provide the information of the colleges<br>
+        a student who has just finished their intermediate might be able to get<br>
+        on the basis of the previous years' admission knowledge.<br>
+        This information will help the students find the college they deserve,<br>
+        and they can add these colleges to the counseling list.</p></td>
+    <td><div id="button-container">
+        <a href="entryb.html"><button class="button">LET's START</button></a>
+    </div></td>
+    </table>
+</body>
+</html>

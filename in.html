@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Path Finder</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background-color: #321414; /* Dark chocolate brown background */
+            overflow: hidden; /* Hide any overflowing elements */
+            position: relative; /* Add this line */
+        }
+
+        .shine {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(45deg, transparent 45%, #FFD700 45%, #FFD700 55%, transparent 55%);
+            animation: shineAnimation 3s linear infinite;
+            pointer-events: none; /* Prevent interaction with this element */
+        }
+
+        #splash-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: none; /* Remove the background image */
+            animation: fadeOut 3s ease 1 forwards;
+        }
+
+        #splash-text {
+            font-size: 96px; /* Larger text */
+            background: linear-gradient(90deg, #FF99CC, #FF99CC, #fff, #fff, #FF99CC, #FF99CC); /* Pale pink and white gradient background */
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block; /* To make background apply to the text only */
+            padding: 20px; /* Add padding for a more polished look */
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Add a subtle glow effect */
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shineAnimation {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shine"></div> <!-- Add the shining element -->
+    <div id="splash-container">
+        <div id="splash-text">Path Finders</div>
+    </div>
+
+    <script>
+        // Function to redirect to the main interface page
+        function redirectToMainInterface() {
+            window.location.href = "main.html"; // Replace with your main interface page URL
+        }
+
+        // Delay for 3 seconds before transitioning to the main interface
+        setTimeout(redirectToMainInterface, 3000);
+    </script>
+</body>
+
+</html>

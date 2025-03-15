@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #3d1a02; /* Darker chocolate brown background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 80px; /* Increased font size */
+            margin-top: 40px;
+            color: #fff;
+            letter-spacing: 5px; /* Added letter spacing */
+        }
+
+        h1::before {
+            content: "REGISTER";
+            display: block;
+            margin-top: 20px;
+            font-size: 40px;
+            color: #ffcc00; /* Bright gold color */
+            animation: shine 2s linear infinite;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        label {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffcc00; /* Bright gold color */
+        }
+
+        input {
+            width: 300px;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffebcd; /* Blanched almond background */
+            color: #3d1a02; /* Dark chocolate brown text */
+            transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        input:focus {
+            border: 2px solid #ffcc00; /* Bright gold border on focus */
+            transform: scale(1.02); /* Slightly larger on focus */
+        }
+
+        #submit-button {
+            background-color: #ffb6c1; /* Light coral color */
+            color: #3d1a02; /* Dark chocolate brown text */
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        #submit-button:hover {
+            background-color: #ff99ac; /* Light coral on hover */
+            transform: scale(1.1); /* Slightly larger on hover */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Soft glow effect on hover */
+        }
+
+        @keyframes shine {
+            0% {
+                color: #ffcc00;
+            }
+            50% {
+                color: #fff;
+            }
+            100% {
+                color: #ffcc00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>&nbsp;</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="number">Number:</label>
+        <input type="tel" id="number" name="number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" id="submit-button" onclick="validateAndSubmit()">Submit</button>
+    </form>
+
+    <script>
+        function validateAndSubmit() {
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("number").value;
+            var email = document.getElementById("email").value;
+
+            if (name !== '' && number !== '' && email !== '') {
+                showSuccessMessage();
+            } else {
+                alert("Please fill in all details.");
+            }
+        }
+
+        function showSuccessMessage() {
+            alert("Registration successful!");
+        }
+    </script>
+</body>
+
+</html>

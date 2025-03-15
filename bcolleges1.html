@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Colleges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #321414;
+            text-align: center;
+            background-image: url('IMG_5791.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        select {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>List Of Colleges For Your Qualifications</h1>
+    <label for="branchFilter">Filter by Branch:</label>
+    <select id="branchFilter" onchange="filterTable()">
+        <option value="all">All</option>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="Machine Learning">Machine Learning</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>College Name</th>
+                <th>Location</th>
+                <th>Branch</th>
+                <th>Fee</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>3,70,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>2,95,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>2,20,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>1,70,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>3,45,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>BVRIT</td>&nbsp;
+                <td>Narsapur,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,58,000</td>&nbsp;
+                <td><a href="https://bvrit.ac.in/">https://bvrit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>4,00,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>2,75,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>3,50,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>2,50,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>2,00,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vardhaman</td>&nbsp;
+                <td>Nagarguda,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,75,000</td>&nbsp;
+                <td><a href="https://vardhaman.org">https://vardhaman.org</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>6,55,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>4,55,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>5,80,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>3,80,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>3,05,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Vasavi</td>&nbsp;
+                <td>Ibrahimbagh,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>2,80,000</td>&nbsp;
+                <td><a href="https://vce.ac.in">https://vce.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>4,70,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>4,00,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>3,50,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>4,50,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>2,00,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MGIT</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,70,000</td>&nbsp;
+                <td><a href="https://mgit.ac.in/">https://mgit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>4,15,000</td>&nbsp;
+                <td><a href="https://sreenidhi.edu.in">https://sreenidhi.edu.in</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>3,15,000</td>&nbsp;
+                <td><a href="https://sreenidhi.edu.in">https://sreenidhi.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>3,90,000</td>&nbsp;
+                <td><a href="https://sreenidhi.ac.in/">https://sreenidhi.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>2,40,000</td>&nbsp;
+                <td><a href="https:/sreenidhi.ac.in/">https://sreenidhi.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>1,78,000</td>&nbsp;
+                <td><a href="https://sreenidhi.ac.in/">https://sreenidhi.ac.in/</a></td>&nbsp;
+            </tr>  
+            <tr>
+                <td>sreenidhi</td>&nbsp;
+                <td>Ghatkesar,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,78,000</td>&nbsp;
+                <td><a href="https://sreenidhi.ac.in/">https://sreenidhi.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MVSR</td>&nbsp;
+                <td>NADERGUL,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>1,70,000</td>&nbsp;
+                <td><a href="https://mvsrec.edu.in/">https://mvsrec.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MVSR</td>&nbsp;
+                <td>NADERGUL,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>2,70,000</td>&nbsp;
+                <td><a href="https://mvsrec.edu.in/">https://mvsrec.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MVSR</td>&nbsp;
+                <td>NADERGUL,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>2,45,000</td>&nbsp;
+                <td><a href="https://mvsrec.edu.in/">https://mvsrec.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MVSR</td>&nbsp;
+                <td>NADERGUL,Hyderabad</td>&nbsp;
+                <td>mechanical</td>&nbsp;
+                <td>1,95,000</td>&nbsp;
+                <td><a href="https://mvsrec.edu.in/">https://mvsrec.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>MVSR</td>&nbsp;
+                <td>NADERGUL,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,70,000</td>&nbsp;
+                <td><a href="https://mvsrec.edu.in/">https://mvsrec.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>5,00,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>5,00,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>5,00,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>DS</td>&nbsp;
+                <td>5,00,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>4,50,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                <td>Warangal</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>4,80,000</td>&nbsp;
+                <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>6,34,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>5,34,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>4,54,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>6,84,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>3,36,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                <td>Gandipet,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>3,14,000</td>&nbsp;
+                <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>5,80,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>4,30,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>5,30,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>3,80,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>2,80,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                <td>Nizampet,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>2,55,000</td>&nbsp;
+                <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>4,55,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>3,30,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>4,05,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>3,05,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>2,30,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                <td>Bachupally,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>2,50,000</td>&nbsp;
+                <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>CSE</td>&nbsp;
+                <td>4,15,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>IT</td>&nbsp;
+                <td>2,90,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>Machine Learning</td>&nbsp;
+                <td>3,65,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>ECE</td>&nbsp;
+                <td>2,65,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>Mechanical</td>&nbsp;
+                <td>2,15,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <tr>
+                <td>CVR College Of Engineering</td>&nbsp;
+                <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                <td>EEE</td>&nbsp;
+                <td>1,90,000</td>&nbsp;
+                <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+            </tr>
+            <td>Malla Reddy University</td>&nbsp;
+            <td>Maisammaguda,Hyderabad</td>&nbsp;
+            <td>CSE</td>&nbsp;
+            <td>2,30,000</td>&nbsp;
+            <td><a href="https://www.mallareddyuniversity.ac.in">https://mallareddyuniversity.ac.in</a></td>&nbsp;
+        </tr>
+      <tr>
+            <td>Malla Reddy University</td>&nbsp;
+            <td>Maisammaguda,Hyderabad</td>&nbsp;
+            <td>CS-D</td>&nbsp;
+            <td>2,00,000</td>&nbsp;
+            <td><a href="https://www.mallareddyuniversity.ac.in">https://mallareddyuniversity.ac.in</a></td>&nbsp;
+        </tr>
+      <tr>
+            <td>Malla Reddy University</td>&nbsp;
+            <td>Maisammaguda,Hyderabad</td>&nbsp;
+            <td>CSE-Cybersecurity</td>&nbsp;
+            <td>2,00,000</td>&nbsp;
+            <td><a href="https://www.mallareddyuniversity.ac.in">https://mallareddyuniversity.ac.in</a></td>&nbsp;
+        </tr>
+     <tr>
+            <td>Malla Reddy University</td>&nbsp;
+            <td>Maisammaguda,Hyderabad</td>&nbsp;
+            <td>CSE-IOT</td>&nbsp;
+            <td>1,30,000</td>&nbsp;
+            <td><a href="https://www.mallareddyuniversity.ac.in">https://mallareddyuniversity.ac.in</a></td>&nbsp;
+        </tr>
+     <tr>
+            <td>Malla Reddy University</td>&nbsp;
+            <td>Maisammaguda,Hyderabad</td>&nbsp;
+            <td>Machine Learning</td>&nbsp;
+            <td>1,90,000</td>&nbsp;
+            <td><a href="https://www.mallareddyuniversity.ac.in">https://mallareddyuniversity.ac.in</a></td>&nbsp;
+        </tr>
+     <tr>
+            <td>GITAM University</td>&nbsp;
+            <td>Rudraram,Hyderabad</td>&nbsp;
+            <td>CSE</td>&nbsp;
+            <td>3,46,000</td>&nbsp;
+            <td><a href="https://www.gitam.edu">https://www.gitam.edu</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>GITAM University</td>&nbsp;
+            <td>Rudraram,Hyderabad</td>&nbsp;
+            <td>CS-Datascience</td>&nbsp;
+            <td>3,46,000</td>&nbsp;
+            <td><a href="https://www.gitam.edu">https://www.gitam.edu</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>GITAM University</td>&nbsp;
+            <td>Rudraram,Hyderabad</td>&nbsp;
+            <td>Civil Engineering</td>&nbsp;
+            <td>1,95,000</td>&nbsp;
+            <td><a href="https://www.gitam.edu">https://www.gitam.edu</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>KL University</td>&nbsp;
+            <td>Moinabad,Hyderabad</td>&nbsp;
+            <td>CSE</td>&nbsp;
+            <td>2,90,000</td>&nbsp;
+            <td><a href="https://klh.edu.in">https://klh.edu.in</a></td>&nbsp;
+        </tr>
+    
+       <tr>
+            <td>KL University</td>&nbsp;
+            <td>Moinabad,Hyderabad</td>&nbsp;
+            <td>AIDS</td>&nbsp;
+            <td>2,80,000</td>&nbsp;
+            <td><a href="https://klh.edu.in">https://klh.edu.in</a></td>&nbsp;
+        </tr>
+    
+       <tr>
+            <td>KL University</td>&nbsp;
+            <td>Moinabad,Hyderabad</td>&nbsp;
+            <td>ECE</td>&nbsp;
+            <td>2,50,000</td>&nbsp;
+            <td><a href="https://klh.edu.in">https://klh.edu.in</a></td>&nbsp;
+        </tr>
+      <tr>
+            <td>ANURAG University</td>&nbsp;
+            <td>Venkatapur,Hyderabad</td>&nbsp;
+            <td>CS-datascience</td>&nbsp;
+            <td>2,95,000</td>&nbsp;
+            <td><a href="https://anurag.edu.in">https://anurag.edu.in</a></td>&nbsp;
+        </tr>
+      <tr>
+            <td>ANURAG University</td>&nbsp;
+            <td>Venkatapur,Hyderabad</td>&nbsp;
+            <td>IT</td>&nbsp;
+            <td>2,85,000</td>&nbsp;
+            <td><a href="https://anurag.edu.in">https://anurag.edu.in</a></td>&nbsp;
+        </tr>
+     <tr>
+            <td>ANURAG University</td>&nbsp;
+            <td>Venkatapur,Hyderabad</td>&nbsp;
+            <td>AIDS</td>&nbsp;
+            <td>2,85,000</td>&nbsp;
+            <td><a href="https://anurag.edu.in">https://anurag.edu.in</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>ANURAG University</td>&nbsp;
+            <td>Venkatapur,Hyderabad</td>&nbsp;
+            <td>CSE-cyber security</td>&nbsp;
+            <td>2,85,000</td>&nbsp;
+            <td><a href="https://anurag.edu.in">https://anurag.edu.in</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>ANURAG University</td>&nbsp;
+            <td>Venkatapur,Hyderabad</td>&nbsp;
+            <td>Machine Learning</td>&nbsp;
+            <td>3,10,000</td>&nbsp;
+            <td><a href="https://anurag.edu.in">https://anurag.edu.in</a></td>&nbsp;
+        </tr>
+    <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>CSE</td>&nbsp;
+            <td>5,00,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+        <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>IT</td>&nbsp;
+            <td>4,60,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+        <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>AIDS</td>&nbsp;
+            <td>4,80,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+        <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>ECE</td>&nbsp;
+            <td>4,00,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+        <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>CSE-Data Science</td>&nbsp;
+            <td>5,00,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+        <tr>
+            <td>Mahindra University</td>&nbsp;
+            <td>Bahadhurpally,Hyderabad</td>&nbsp;
+            <td>Cyber Security</td>&nbsp;
+            <td>4,25,000</td>&nbsp;
+            <td><a href="https://www.mahindrauniversity.edu.in">https://www.mahindrauniversity.edu.in</a>
+    
+    </td>&nbsp;
+        </tr>
+              </tbody>
+    </table>
+
+    <script>
+        function filterTable() {
+            var branchFilter = document.getElementById("branchFilter");
+            var selectedBranch = branchFilter.value.toLowerCase();
+            var rows = document.querySelectorAll("tbody tr");
+
+            rows.forEach(function (row) {
+                var branch = row.querySelector("td:nth-child(3)").textContent.toLowerCase();
+                if (selectedBranch === "all" || branch.includes(selectedBranch)) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

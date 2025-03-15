@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search for B Category Seats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #382e2c;
+            text-align: center;
+            background-image: url('IMG_5801.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: #ffdab9;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #ffdab9;
+            margin-top: 40px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #ffdab9;
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        label {
+            font-size: 24px;
+            color: #555;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 30px;
+            margin: 20px auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        button:hover {
+            background-color: #daa520;
+            animation: none;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="animate_animated animate_fadeInDown">College Predictor</h1>
+    <h2 class="animate_animated animate_fadeInUp">Enter the following details:</h2>
+    <form onsubmit="myfunc(event)" class="animate_animated animate_fadeIn" action="http://127.0.0.1:5000">
+        <label for="Category">Category</label>
+        <select id="Category" name="Category">
+            <option value="Select">Select</option>
+            <option value="7">SC</option>
+            <option value="2">BC_A</option>
+            <option value="3">BC_B</option>
+            <option value="4">BC_C</option>
+            <option value="5">BC_D</option>
+            <option value="6">BC_E</option>
+            <option value="8">ST</option>
+            <option value="1">OC</option>
+            <option value="9">EWS GEN OU</option>
+        </select><br>
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="SubCategory">
+            <option value="Select">Select</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select><br>
+        <label for="EAMCET Rank">EAMCET Rank:</label>
+        <input type="text" id="EAMCET_Rank" name="EAMCET Rank"><br>
+        <button type="button">SUBMIT</button>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List Of Colleges For Your Qualifications</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #321414;
+                text-align: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+                color: #fff;
+            }
+            table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <h1>List Of Colleges For Your Qualifications</h1>
+        <label for="branchFilter">Filter by Branch:</label>
+        <select id="branchFilter" onchange="filterTable()">
+            <option value="all">All</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Other">Other</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>College Name</th>
+                    <th>Location</th>
+                    <th>Branch</th>
+                    <th>Fee</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>CSE</td>&nbsp;
+                    <td>5,00,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>IT</td>&nbsp;
+                    <td>5,00,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>ECE</td>&nbsp;
+                    <td>5,00,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>DS</td>&nbsp;
+                    <td>5,00,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>Mechanical</td>&nbsp;
+                    <td>4,50,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>KITS(Kakatiya Institute of Technology and Science)</td>&nbsp;
+                    <td>Warangal</td>&nbsp;
+                    <td>EEE</td>&nbsp;
+                    <td>4,80,000</td>&nbsp;
+                    <td><a href="https://www.kitsw.ac.in/">https://www.kitsw.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>CSE</td>&nbsp;
+                    <td>6,34,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>IT</td>&nbsp;
+                    <td>5,34,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>ECE</td>&nbsp;
+                    <td>4,54,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>Machine Learning</td>&nbsp;
+                    <td>6,84,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>Mechanical</td>&nbsp;
+                    <td>3,36,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Chaitanaya Bharathi Institute of Technology</td>&nbsp;
+                    <td>Gandipet,Hyderabad</td>&nbsp;
+                    <td>EEE</td>&nbsp;
+                    <td>3,14,000</td>&nbsp;
+                    <td><a href="https://www.cbit.ac.in/">https://www.cbit.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>CSE</td>&nbsp;
+                    <td>5,80,000</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>IT</td>&nbsp;
+                    <td>4,30,000</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>Machine Learning</td>&nbsp;
+                    <td>5,30,000</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>ECE</td>&nbsp;
+                    <td>3,80,000</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>Mechanical</td>&nbsp;
+                    <td>2,80,000</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>VNR  Vignana Jyothi Institute of Engineering &Technology</td>&nbsp;
+                    <td>Nizampet,Hyderabad</td>&nbsp;
+                    <td>EEE</td>&nbsp;
+                    <td><a href="https://www.vnrvjiet.ac.in/">https://www.vnrvjiet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>CSE</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>IT</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>Machine Learning</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>ECE</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>Mechanical</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>Gokaraju Rangaraju Institute of Engineering and Technology</td>&nbsp;
+                    <td>Bachupally,Hyderabad</td>&nbsp;
+                    <td>EEE</td>&nbsp;
+                    <td><a href="https://www.griet.ac.in/">https://www.griet.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>CSE</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>IT</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>Machine Learning</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>ECE</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>Mechanical</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+                <tr>
+                    <td>CVR College Of Engineering</td>&nbsp;
+                    <td>Ibrahimpatnam,Hyderabad</td>&nbsp;
+                    <td>EEE</td>&nbsp;
+                    <td><a href="https://cvr.ac.in/">https://cvr.ac.in/</a></td>&nbsp;
+                </tr>
+        
+        
+            </tbody>
+        </table>
+
+        <script>
+            function filterTable() {
+                var branchFilter = document.getElementById("branchFilter").value;
+                var tableRows = document.querySelectorAll("tbody tr");
+
+                tableRows.forEach(function(row) {
+                    var branchCell = row.getElementsByTagName("td")[2].textContent;
+                    if (branchFilter === "all" || branchCell === branchFilter || (branchFilter === "Other" && (branchCell === "Other" || branchCell === "Other Non-Common"))) {
+                        row.style.display = "";
+                    } else {
+                        row.style.display = "none";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
